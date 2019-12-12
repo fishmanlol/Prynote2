@@ -12,8 +12,10 @@ class Notebook {
     var title: String = ""
     var notes: [Note] = []
     var isLoading = false
+    var type: NotebookType
     
     init(_ title: String) {
+        self.type = .single
         self.title = title
         
         let note1 = Note(notebook: self)
@@ -37,7 +39,20 @@ class Notebook {
         }
     }
     
+    init(_ title: String, _ notebooks: [Notebook]) {
+        self.title = title
+        self.type = .all
+        self.notes = notebooks.flatMap { $0.notes }
+        print(notes)
+    }
+    
     func getCountOfNote() -> Int {
         return notes.count
+    }
+    
+    enum NotebookType {
+        case all
+        case single
+        case sharedWithMe
     }
 }

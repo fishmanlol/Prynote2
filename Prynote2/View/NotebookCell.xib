@@ -45,7 +45,7 @@
                             <constraint firstAttribute="width" constant="16" id="a2s-fD-4sh"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="75" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-uc-XFY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-uc-XFY">
                         <rect key="frame" x="461" y="30" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,6 +57,7 @@
                     <constraint firstAttribute="bottom" secondItem="wao-8V-oee" secondAttribute="bottom" id="BGY-Yd-5y4"/>
                     <constraint firstItem="WX7-8o-yDO" firstAttribute="centerY" secondItem="ZvT-NB-2Xf" secondAttribute="centerY" id="E0X-kd-MPO"/>
                     <constraint firstItem="IeK-Ls-Vbw" firstAttribute="centerY" secondItem="ZvT-NB-2Xf" secondAttribute="centerY" id="LTC-Yl-ehS"/>
+                    <constraint firstItem="JRd-uc-XFY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IeK-Ls-Vbw" secondAttribute="trailing" constant="8" id="WuF-Bj-qdX"/>
                     <constraint firstAttribute="trailing" secondItem="WX7-8o-yDO" secondAttribute="trailing" constant="24" id="XKB-C7-R5b"/>
                     <constraint firstItem="vPK-ZH-9ry" firstAttribute="leading" secondItem="ZvT-NB-2Xf" secondAttribute="leading" constant="24" id="gPc-Wb-Zkf"/>
                     <constraint firstAttribute="trailing" secondItem="wao-8V-oee" secondAttribute="trailing" id="gQF-B7-b7E"/>

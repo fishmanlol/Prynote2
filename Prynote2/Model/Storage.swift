@@ -11,6 +11,15 @@ import Foundation
 struct Storage {
     static var shared = Storage()
     var notebooks: [Notebook] = []
+    
+    var allNotes: Notebook {
+        return Notebook("All Notes", notebooks)
+    }
+    
+    var sharedWithMe: Notebook {
+        return Notebook("Shared With Me")
+    }
+    
     private init() {}
     
     mutating func createDefaultNotebook() {

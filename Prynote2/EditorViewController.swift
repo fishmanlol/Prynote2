@@ -10,4 +10,9 @@ import UIKit
 
 class EditorViewController: UIViewController {
     
+    var note: Note!
+    
+    override func viewDidLoad() {
+        view.backgroundColor = .gray
+    }
 }

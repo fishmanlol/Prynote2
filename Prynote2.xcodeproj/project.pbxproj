@@ -36,6 +36,7 @@
 		10AA316723A0797700C71E08 /* NotebookViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA316623A0797700C71E08 /* NotebookViewController+.swift */; };
 		10AA316C23A0C6A900C71E08 /* StateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA316B23A0C6A900C71E08 /* StateCoordinator.swift */; };
 		3E1199A1BD94A06D4BDAD8D3 /* Pods_Prynote2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE3A7D706ABA0A4DCE26F05 /* Pods_Prynote2.framework */; };
+		8EEA397023A1A20B00C8D5FF /* NotesViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA396F23A1A20B00C8D5FF /* NotesViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		4D7140509EF36627F33DA5AE /* Pods-Prynote2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prynote2.release.xcconfig"; path = "Target Support Files/Pods-Prynote2/Pods-Prynote2.release.xcconfig"; sourceTree = "<group>"; };
 		5BE3A7D706ABA0A4DCE26F05 /* Pods_Prynote2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prynote2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9F3244908B9DA7AA287F57 /* Pods-Prynote2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prynote2.debug.xcconfig"; path = "Target Support Files/Pods-Prynote2/Pods-Prynote2.debug.xcconfig"; sourceTree = "<group>"; };
+		8EEA396F23A1A20B00C8D5FF /* NotesViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				10AA314A23A0572800C71E08 /* NotebookViewController.swift */,
 				10AA316623A0797700C71E08 /* NotebookViewController+.swift */,
 				10AA314C23A0574100C71E08 /* NotesViewController.swift */,
+				8EEA396F23A1A20B00C8D5FF /* NotesViewController+.swift */,
 				10AA314E23A0575300C71E08 /* EditorViewController.swift */,
 				10AA315723A065FB00C71E08 /* View */,
 				10AA313423A04CB200C71E08 /* Model */,
@@ -338,6 +341,7 @@
 				10AA314D23A0574100C71E08 /* NotesViewController.swift in Sources */,
 				10AA314223A052B400C71E08 /* NSNotification.Name+.swift in Sources */,
 				10AA313823A04FC000C71E08 /* Notebook.swift in Sources */,
+				8EEA397023A1A20B00C8D5FF /* NotesViewController+.swift in Sources */,
 				10AA314F23A0575300C71E08 /* EditorViewController.swift in Sources */,
 				10AA316123A0661600C71E08 /* NotebookHeader.swift in Sources */,
 				10AA313623A04CC800C71E08 /* Storage.swift in Sources */,

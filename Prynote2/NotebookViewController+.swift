@@ -11,7 +11,7 @@ import UIKit
 extension NotebookViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        stateCoordinator?.selectedNotebook = getNotebook(in: indexPath)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,15 +28,8 @@ extension NotebookViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constant.Identifier.NOTEBOOKCELL) as! NotebookCell
-        switch indexPath {
-        case IndexPath(row: 0, section: 0):
-            configureAllNotes(cell)
-        case IndexPath(row: 1, section: 0):
-            configureSharedWithMe(cell)
-        default:
-            let notebook = getNotebook(in: indexPath)
-            configure(cell, with: notebook)
-        }
+        let notebook = getNotebook(in: indexPath)
+        configure(cell, with: notebook)
         
         return cell
     }
@@ -53,6 +46,10 @@ extension NotebookViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView(frame: CGRect.zero)
+    }
+    
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
     }
@@ -66,17 +63,14 @@ extension NotebookViewController {
     }
     
     private func getNotebook(in indexPath: IndexPath) -> Notebook {
-        return Storage.shared.notebooks[indexPath.row]
-    }
-    
-    private func configureSharedWithMe(_ cell: NotebookCell) {
-        cell.titleLabel.text = "Shared With Me"
-        cell.notesCountLabel.text = ""
-    }
-    
-    private func configureAllNotes(_ cell: NotebookCell) {
-        cell.titleLabel.text = "All Notes"
-        cell.notesCountLabel.text = "\(Storage.shared.getCountOfAllNote())"
+        switch indexPath {
+        case IndexPath(row: 0, section: 0):
+            return Storage.shared.allNotes
+        case IndexPath(row: 1, section: 0):
+            return Storage.shared.sharedWithMe
+        default:
+            return Storage.shared.notebooks[indexPath.row]
+        }
     }
     
     private func configure(_ cell: NotebookCell, with notebook: Notebook) {

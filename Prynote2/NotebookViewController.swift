@@ -48,6 +48,7 @@ class NotebookViewController: UITableViewController {
         tableView.register(UINib(resource: R.nib.notebookHeader), forHeaderFooterViewReuseIdentifier: Constant.Identifier.NOTEBOOKHEADER)
         tableView.separatorStyle = .none
         tableView.backgroundView = backgroundView
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0.01))
         
         //navigation item
         navigationItem.title = "Notebooks"

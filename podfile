@@ -6,6 +6,7 @@ target 'Prynote2' do
   use_frameworks!
   pod 'SnapKit'
   pod 'R.swift'
+  pod 'DZNEmptyDataSet'
   # Pods for Prynote2
 
 end
